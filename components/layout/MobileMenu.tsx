@@ -71,7 +71,7 @@ export default function MobileMenu({
 
             {/* Menu Items */}
             <nav className="px-6">
-              <ul className="space-y-1">
+              <ul className="space-y-2">
                 {menuItems.map((item, index) => (
                   <motion.li
                     key={item.href}
@@ -81,9 +81,11 @@ export default function MobileMenu({
                   >
                     <button
                       onClick={() => handleMenuClick(item.href)}
-                      className="w-full text-left text-2xl font-medium py-3 hover:text-primary transition-colors"
+                      className="w-full text-left text-2xl font-medium py-3 hover:text-primary transition-colors relative group"
                     >
                       {item.label}
+                      {/* 下線アニメーション */}
+                      <span className="absolute left-0 bottom-2 h-0.5 w-0 bg-primary transition-all duration-300 group-hover:w-full" />
                     </button>
                   </motion.li>
                 ))}

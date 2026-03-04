@@ -17,10 +17,24 @@ const menuItems = [
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [activeSection, setActiveSection] = useState('top');
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
+
+      // アクティブセクションの検出
+      const sections = menuItems.map(item => item.href);
+      for (const section of sections) {
+        const element = document.getElementById(section);
+        if (element) {
+          const rect = element.getBoundingClientRect();
+          if (rect.top <= 100 && rect.bottom >= 100) {
+            setActiveSection(section);
+            break;
+          }
+        }
+      }
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -35,10 +49,10 @@ export default function Header() {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b ${
           isScrolled
-            ? 'bg-white/90 backdrop-blur-md shadow-md'
-            : 'bg-transparent'
+            ? 'bg-white/95 backdrop-blur-md border-primary-light/30 shadow-sm'
+            : 'bg-white/80 backdrop-blur-sm border-transparent'
         }`}
       >
         <div className="max-w-7xl mx-auto px-6 md:px-8">
@@ -58,9 +72,21 @@ export default function Header() {
                   <li key={item.href}>
                     <button
                       onClick={() => handleMenuClick(item.href)}
-                      className="text-sm font-medium hover:text-primary transition-colors"
+                      className={`relative text-sm transition-all group ${
+                        activeSection === item.href
+                          ? 'font-bold text-primary'
+                          : 'font-medium text-foreground hover:text-primary'
+                      }`}
                     >
                       {item.label}
+                      {/* 下線アニメーション */}
+                      <span
+                        className={`absolute left-0 bottom-0 h-0.5 bg-primary transition-all duration-300 ${
+                          activeSection === item.href
+                            ? 'w-full'
+                            : 'w-0 group-hover:w-full'
+                        }`}
+                      />
                     </button>
                   </li>
                 ))}

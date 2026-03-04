@@ -2,25 +2,43 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #1a1a1a;
+  --primary: #f6e85e;
+  --primary-light: #f9f0a1;
+  --primary-dark: #e6d64e;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-light: var(--primary-light);
+  --color-primary-dark: var(--primary-dark);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  
+  /* カスタムフォントサイズ */
+  --font-size-hero: 3rem;
+  --font-size-section: 2rem;
+  --font-size-heading: 1.5rem;
+  
+  /* カスタムスペーシング */
+  --spacing-section: 6rem;
+  --spacing-section-mobile: 4rem;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
+
+/* スムーススクロール */
+html {
+  scroll-behavior: smooth;
+}
+
+/* セクション共通スタイル */
+section {
+  scroll-margin-top: 5rem;
 }

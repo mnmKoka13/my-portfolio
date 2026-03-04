@@ -30,7 +30,7 @@ export default function AvailabilitySection() {
   };
 
   return (
-    <SectionWrapper id="availability" title="Availability">
+    <SectionWrapper id="availability" title="Availability" className="bg-secondary/30">
       <FadeIn>
         <div className="max-w-2xl mx-auto text-center">
           <div className="bg-white rounded-lg shadow-lg p-8 md:p-10">

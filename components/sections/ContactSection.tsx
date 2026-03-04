@@ -47,7 +47,7 @@ export default function ContactSection() {
   };
 
   return (
-    <SectionWrapper id="contact" title="Contact">
+    <SectionWrapper id="contact" title="Contact" className="bg-white">
       <div className="max-w-2xl mx-auto">
         <FadeIn>
           <p className="text-center text-gray-700 mb-8 md:mb-12">

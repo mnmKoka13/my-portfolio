@@ -4,7 +4,7 @@ import profileData from '@/data/profile.json';
 
 export default function ProfileSection() {
   return (
-    <SectionWrapper id="profile" title="Profile">
+    <SectionWrapper id="profile" title="Profile" className="bg-white">
       <div className="max-w-3xl mx-auto">
         <FadeIn>
           <div className="bg-white rounded-lg shadow-lg p-6 md:p-8">

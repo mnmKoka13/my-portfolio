@@ -5,7 +5,7 @@ import worksData from '@/data/works.json';
 
 export default function WorksSection() {
   return (
-    <SectionWrapper id="works" title="Works">
+    <SectionWrapper id="works" title="Works" className="bg-secondary/30">
       <FadeIn>
         <WorksCarousel works={worksData} />
       </FadeIn>

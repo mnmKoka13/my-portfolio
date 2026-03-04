@@ -6,7 +6,7 @@ export default function TopSection() {
   return (
     <section
       id="top"
-      className="px-6 md:px-8 pt-20"
+      className="px-6 md:px-8 pt-20 bg-secondary/30"
     >
       <div className="max-w-4xl mx-auto text-center w-full">
         <FadeIn delay={0.2} useInView={false}>

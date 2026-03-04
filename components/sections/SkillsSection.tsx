@@ -4,7 +4,7 @@ import skillsData from '@/data/skills.json';
 
 export default function SkillsSection() {
   return (
-    <SectionWrapper id="skills" title="Skills">
+    <SectionWrapper id="skills" title="Skills" className="bg-secondary/30">
       <div className="max-w-5xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
           {skillsData.map((category, categoryIndex) => (

@@ -61,7 +61,7 @@ export default function ContactSection() {
                 href={contact.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 px-6 py-3 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow"
+                className="flex items-center gap-3 px-6 py-3 bg-white rounded-xl shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
               >
                 {getIcon(contact.icon)}
                 <span className="font-medium">{contact.label}</span>

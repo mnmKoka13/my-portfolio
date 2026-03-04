@@ -7,7 +7,7 @@ export default function ProfileSection() {
     <SectionWrapper id="profile" title="Profile" className="bg-white">
       <div className="max-w-3xl mx-auto">
         <FadeIn>
-          <div className="bg-white rounded-lg shadow-lg p-6 md:p-8">
+          <div className="bg-white rounded-xl shadow-xl p-6 md:p-8 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
             <div className="space-y-6">
               <div>
                 <h3 className="text-xl font-bold mb-2">名前</h3>

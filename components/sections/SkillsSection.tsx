@@ -9,7 +9,7 @@ export default function SkillsSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
           {skillsData.map((category, categoryIndex) => (
             <FadeIn key={categoryIndex} delay={categoryIndex * 0.1}>
-              <div className="bg-white rounded-lg shadow-lg p-6 md:p-8">
+              <div className="bg-white rounded-xl shadow-xl p-6 md:p-8 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
                 <h3 className="text-xl md:text-2xl font-bold mb-4 md:mb-6">
                   {category.category}
                 </h3>

@@ -55,11 +55,18 @@ body {
 /* スムーススクロール */
 html {
   scroll-behavior: smooth;
+  scroll-snap-type: y proximity;
+  scroll-padding-top: 0;
+  overflow-y: scroll;
 }
 
 /* セクション共通スタイル */
 section {
-  scroll-margin-top: 5rem;
+  scroll-snap-align: start;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* カード共通スタイル */

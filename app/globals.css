@@ -1,11 +1,24 @@
 @import "tailwindcss";
 
 :root {
+  /* Base colors */
   --background: #ffffff;
-  --foreground: #1a1a1a;
-  --primary: #f6e85e;
-  --primary-light: #f9f0a1;
-  --primary-dark: #e6d64e;
+  --foreground: #003B46;
+  
+  /* Primary palette - 青緑系グラデーション */
+  --primary: #07575B;
+  --primary-light: #66A5AD;
+  --primary-dark: #003B46;
+  
+  /* Secondary/Accent colors */
+  --secondary: #C4DFE6;
+  --accent: #66A5AD;
+  
+  /* Semantic colors */
+  --card-bg: #ffffff;
+  --card-border: #C4DFE6;
+  --hover: #07575B;
+  --hover-light: #66A5AD;
 }
 
 @theme inline {
@@ -14,6 +27,12 @@
   --color-primary: var(--primary);
   --color-primary-light: var(--primary-light);
   --color-primary-dark: var(--primary-dark);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+  --color-card-bg: var(--card-bg);
+  --color-card-border: var(--card-border);
+  --color-hover: var(--hover);
+  --color-hover-light: var(--hover-light);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   
@@ -41,4 +60,29 @@ html {
 /* セクション共通スタイル */
 section {
   scroll-margin-top: 5rem;
+}
+
+/* カード共通スタイル */
+.card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  border-color: var(--hover-light);
+  box-shadow: 0 4px 16px rgba(7, 87, 91, 0.08);
+  transform: translateY(-2px);
+}
+
+/* リンク共通スタイル */
+a {
+  color: var(--primary);
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--hover-light);
 }

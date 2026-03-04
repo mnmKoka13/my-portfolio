@@ -347,13 +347,32 @@ interface FadeInProps {
 ### 4.1 カラーパレット
 ```css
 :root {
-  --background: #ffffff;
-  --foreground: #1a1a1a;
-  --primary: #f6e85e;
-  --primary-light: #f9f0a1;
-  --primary-dark: #e6d64e;
+  /* Base colors */
+  --background: #ffffff;     /* 白背景 */
+  --foreground: #003B46;     /* 濃い青緑（メインテキスト） */
+  
+  /* Primary palette - 青緑系グラデーション */
+  --primary: #07575B;        /* 青緑（プライマリカラー） */
+  --primary-light: #66A5AD;  /* 明るい青緑 */
+  --primary-dark: #003B46;   /* 濃い青緑 */
+  
+  /* Secondary/Accent colors */
+  --secondary: #C4DFE6;      /* 淡い青緑 */
+  --accent: #66A5AD;         /* アクセント */
+  
+  /* Semantic colors */
+  --card-bg: #ffffff;        /* カード背景 */
+  --card-border: #C4DFE6;    /* カードボーダー */
+  --hover: #07575B;          /* ホバー状態 */
+  --hover-light: #66A5AD;    /* ホバー（薄め） */
 }
 ```
+
+#### 配色コンセプト
+- **ベース**: 白背景に濃い青緑のテキストで読みやすさ重視
+- **アクセント**: 青緑系のグラデーションで統一感
+- **カード**: 白背景に薄い青緑のボーダーで清潔感
+- **インタラクション**: ホバー時に色が変化して視覚的フィードバック
 
 ### 4.2 タイポグラフィ
 ```css
@@ -380,6 +399,28 @@ screens: {
   'xl': '1280px', // 大型PC
 }
 ```
+
+### 4.5 カードスタイル
+```css
+.card {
+  background-color: #ffffff;
+  border: 1px solid #C4DFE6;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  border-color: #66A5AD;
+  box-shadow: 0 4px 16px rgba(7, 87, 91, 0.08);
+  transform: translateY(-2px);
+}
+```
+
+**適用箇所:**
+- Works カルーセルの制作物カード
+- Skills のスキルカテゴリカード
+- Contact のリンクカード
 
 ---
 

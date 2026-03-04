@@ -8,6 +8,7 @@ interface FadeInProps {
   delay?: number;
   direction?: 'up' | 'down' | 'left' | 'right';
   className?: string;
+  useInView?: boolean; // trueの場合whileInViewを使用、falseの場合は初回アニメーション
 }
 
 export default function FadeIn({
@@ -15,6 +16,7 @@ export default function FadeIn({
   delay = 0,
   direction = 'up',
   className = '',
+  useInView = true,
 }: FadeInProps) {
   const directionOffset = {
     up: { y: 20, x: 0 },
@@ -40,6 +42,21 @@ export default function FadeIn({
     },
   };
 
+  // useInViewがfalseの場合は、初回マウント時のアニメーションのみ
+  if (!useInView) {
+    return (
+      <motion.div
+        initial="hidden"
+        animate="visible"
+        variants={variants}
+        className={className}
+      >
+        {children}
+      </motion.div>
+    );
+  }
+
+  // useInViewがtrueの場合は、スクロール時のアニメーション
   return (
     <motion.div
       initial="hidden"

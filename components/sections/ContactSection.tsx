@@ -48,15 +48,16 @@ export default function ContactSection() {
 
   return (
     <SectionWrapper id="contact" title="Contact">
-      <FadeIn>
-        <div className="max-w-2xl mx-auto">
+      <div className="max-w-2xl mx-auto">
+        <FadeIn>
           <p className="text-center text-gray-700 mb-8 md:mb-12">
             お仕事のご相談やお問い合わせは、以下のリンクからお気軽にご連絡ください。
           </p>
-          <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8">
-            {contactData.map((contact, index) => (
+        </FadeIn>
+        <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8">
+          {contactData.map((contact, index) => (
+            <FadeIn key={index} delay={index * 0.1}>
               <a
-                key={index}
                 href={contact.url}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -65,10 +66,10 @@ export default function ContactSection() {
                 {getIcon(contact.icon)}
                 <span className="font-medium">{contact.label}</span>
               </a>
-            ))}
-          </div>
+            </FadeIn>
+          ))}
         </div>
-      </FadeIn>
+      </div>
     </SectionWrapper>
   );
 }

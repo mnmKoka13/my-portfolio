@@ -1,3 +1,4 @@
+export type { Top } from './top';
 export type { Profile } from './profile';
 export type { Work } from './works';
 export type { SkillCategory, Skill } from './skills';

@@ -1,0 +1,20 @@
+[
+  {
+    "platform": "GitHub",
+    "url": "https://github.com/yourusername",
+    "icon": "github",
+    "label": "GitHub"
+  },
+  {
+    "platform": "Twitter",
+    "url": "https://twitter.com/yourusername",
+    "icon": "twitter",
+    "label": "X (Twitter)"
+  },
+  {
+    "platform": "Email",
+    "url": "mailto:your.email@example.com",
+    "icon": "email",
+    "label": "Email"
+  }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "category": "フロントエンド",
+    "skills": [
+      { "name": "React" },
+      { "name": "Next.js" },
+      { "name": "TypeScript" },
+      { "name": "Vue.js" },
+      { "name": "Tailwind CSS" }
+    ]
+  },
+  {
+    "category": "バックエンド",
+    "skills": [
+      { "name": "Node.js" },
+      { "name": "Express" },
+      { "name": "Python" },
+      { "name": "Django" },
+      { "name": "PostgreSQL" }
+    ]
+  },
+  {
+    "category": "インフラ・ツール",
+    "skills": [
+      { "name": "Docker" },
+      { "name": "AWS" },
+      { "name": "Vercel" },
+      { "name": "Git" },
+      { "name": "GitHub Actions" }
+    ]
+  },
+  {
+    "category": "その他",
+    "skills": [
+      { "name": "Figma" },
+      { "name": "REST API" },
+      { "name": "GraphQL" },
+      { "name": "Agile/Scrum" }
+    ]
+  }
+]

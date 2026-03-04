@@ -1,0 +1,29 @@
+[
+  {
+    "id": "work-1",
+    "title": "ECサイト構築",
+    "description": "Next.jsを使用したモダンなECサイト。ユーザー認証、決済機能、管理画面を実装しました。",
+    "image": "/images/works/work1.jpg",
+    "tags": ["Next.js", "TypeScript", "Stripe"],
+    "url": "https://example.com",
+    "period": "2025/10 - 2025/12"
+  },
+  {
+    "id": "work-2",
+    "title": "タスク管理アプリ",
+    "description": "React + Firebaseで構築したリアルタイムタスク管理アプリケーション。チーム向けの機能を充実させました。",
+    "image": "/images/works/work2.jpg",
+    "tags": ["React", "Firebase", "Material-UI"],
+    "github": "https://github.com/yourusername/task-manager",
+    "period": "2025/07 - 2025/09"
+  },
+  {
+    "id": "work-3",
+    "title": "コーポレートサイトリニューアル",
+    "description": "企業のコーポレートサイトをリニューアル。レスポンシブ対応とSEO最適化を実施しました。",
+    "image": "/images/works/work3.jpg",
+    "tags": ["Next.js", "Tailwind CSS", "Vercel"],
+    "url": "https://example-corporate.com",
+    "period": "2025/04 - 2025/06"
+  }
+]

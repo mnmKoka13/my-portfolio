@@ -18,14 +18,14 @@ export default function SectionWrapper({
     <section
       id={id}
       className={cn(
-        'py-16 md:py-24 px-6 md:px-8',
+        'py-24 md:py-32 px-6 md:px-8',
         'w-full max-w-6xl mx-auto',
         className
       )}
     >
       <div className="w-full">
         {title && (
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 md:mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 md:mb-20">
             {title}
           </h2>
         )}

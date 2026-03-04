@@ -28,7 +28,7 @@ export default function WorksCarousel({ works }: WorksCarouselProps) {
     <div className="relative">
       {/* Carousel Container */}
       <div className="overflow-hidden" ref={emblaRef}>
-        <div className="flex gap-4 md:gap-6">
+        <div className="flex gap-6 md:gap-8">
           {works.map((work) => (
             <div
               key={work.id}

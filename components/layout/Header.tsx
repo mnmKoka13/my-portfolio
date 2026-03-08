@@ -62,7 +62,7 @@ export default function Header() {
               onClick={() => handleMenuClick('top')}
               className="text-xl md:text-2xl font-bold hover:opacity-70 transition-opacity"
             >
-              Portfolio
+              portfolio
             </button>
 
             {/* Desktop Navigation */}

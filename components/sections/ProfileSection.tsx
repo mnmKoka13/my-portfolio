@@ -11,17 +11,17 @@ export default function ProfileSection() {
             <div className="space-y-6">
               <div>
                 <h3 className="text-xl font-bold mb-2">名前</h3>
-                <p className="text-gray-700">{profileData.name}</p>
+                <p className="text-slate-700">{profileData.name}</p>
               </div>
               <div>
                 <h3 className="text-xl font-bold mb-2">職種</h3>
-                <p className="text-gray-700">{profileData.role}</p>
+                <p className="text-slate-700">{profileData.role}</p>
               </div>
               <div>
                 <h3 className="text-xl font-bold mb-2">自己紹介</h3>
                 <div className="space-y-3">
                   {profileData.description.map((text, index) => (
-                    <p key={index} className="text-gray-700 leading-relaxed">
+                    <p key={index} className="text-slate-700 leading-relaxed">
                       {text}
                     </p>
                   ))}

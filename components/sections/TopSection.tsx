@@ -12,13 +12,13 @@ export default function TopSection() {
         {/* テキストエリア - 左下 */}
         <div className="absolute bottom-8 left-8 md:bottom-12 md:left-12 max-w-md">
           <FadeIn delay={0.2} useInView={false}>
-            <p className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
+            <p className="text-2xl md:text-3xl font-bold text-slate-800 mb-4">
               {topData.copy}
             </p>
           </FadeIn>
 
           <FadeIn delay={0.4} useInView={false}>
-            <p className="text-base md:text-lg text-gray-700 leading-relaxed">
+            <p className="text-base md:text-lg text-slate-700 leading-relaxed">
               {topData.subcopy}
             </p>
           </FadeIn>

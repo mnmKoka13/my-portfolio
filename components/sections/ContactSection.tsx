@@ -50,7 +50,7 @@ export default function ContactSection() {
     <SectionWrapper id="contact" title="Contact" className="bg-white">
       <div className="max-w-2xl mx-auto">
         <FadeIn>
-          <p className="text-center text-gray-700 mb-8 md:mb-12">
+          <p className="text-center text-slate-700 mb-8 md:mb-12">
             お仕事のご相談やお問い合わせは、以下のリンクからお気軽にご連絡ください。
           </p>
         </FadeIn>

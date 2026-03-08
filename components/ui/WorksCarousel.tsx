@@ -50,7 +50,7 @@ export default function WorksCarousel({ works }: WorksCarouselProps) {
                   <h3 className="text-xl md:text-2xl font-bold mb-3">
                     {work.title}
                   </h3>
-                  <p className="text-gray-700 mb-4 leading-relaxed">
+                  <p className="text-slate-700 mb-4 leading-relaxed">
                     {work.description}
                   </p>
 
@@ -92,7 +92,7 @@ export default function WorksCarousel({ works }: WorksCarouselProps) {
 
                   {/* Period */}
                   {work.period && (
-                    <p className="text-sm text-gray-500 mt-4">{work.period}</p>
+                    <p className="text-sm text-slate-500 mt-4">{work.period}</p>
                   )}
                 </div>
               </div>

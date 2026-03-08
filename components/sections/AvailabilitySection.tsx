@@ -10,9 +10,9 @@ export default function AvailabilitySection() {
       case 'limited':
         return 'bg-secondary/40 text-primary border-accent';
       case 'unavailable':
-        return 'bg-gray-100 text-gray-800 border-gray-300';
+        return 'bg-slate-100 text-slate-800 border-slate-300';
       default:
-        return 'bg-gray-100 text-gray-800 border-gray-300';
+        return 'bg-slate-100 text-slate-800 border-slate-300';
     }
   };
 
@@ -43,7 +43,7 @@ export default function AvailabilitySection() {
                 {getStatusLabel(availabilityData.status)}
               </span>
             </div>
-            <p className="text-xl md:text-2xl font-medium text-gray-700">
+            <p className="text-xl md:text-2xl font-medium text-slate-700">
               {availabilityData.message}
             </p>
           </div>

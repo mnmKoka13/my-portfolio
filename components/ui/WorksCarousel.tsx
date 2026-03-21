@@ -52,20 +52,22 @@ export default function WorksCarousel({ works }: WorksCarouselProps) {
                 className="flex-[0_0_100%] md:flex-[0_0_80%] lg:flex-[0_0_60%] min-w-0 px-3 md:px-4"
               >
                 <div 
-                  className={`bg-white rounded-xl border border-slate-200 overflow-hidden transition-all duration-500 h-[580px] md:h-[620px] flex flex-col ${
+                  className={`bg-white rounded-xl border border-slate-200 overflow-hidden transition-all duration-500 h-[500px] md:h-[540px] flex flex-col ${
                     isActive 
                       ? 'opacity-100 scale-100 hover:-translate-y-1' 
                       : 'opacity-40 scale-95'
                   }`}
                 >
                 {/* Image */}
-                <div className="relative w-full h-64 md:h-80 bg-gray-200 flex-shrink-0">
+                <div className="relative w-full h-48 md:h-64 bg-gray-200 flex-shrink-0">
                   <Image
                     src={work.image}
                     alt={work.title}
                     fill
                     className="object-cover"
                   />
+                  {/* Gradient Overlay */}
+                  <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-white via-white/60 to-transparent pointer-events-none" />
                 </div>
 
                 {/* Content */}

@@ -1,0 +1,112 @@
+[
+  {
+    "id": "work-1",
+    "title": "ECサイト構築",
+    "description": "Next.jsを使用したモダンなECサイト。ユーザー認証、決済機能、管理画面を実装しました。",
+    "image": "/images/works/work1.jpg",
+    "tech": ["Next.js", "TypeScript", "Stripe"],
+    "role": "フロントエンド・バックエンド開発、要件定義、UI設計",
+    "period": "2025/10 - 2025/12",
+    "result": "売上前年比+30%、運用コスト削減"
+  },
+  {
+    "id": "work-2",
+    "title": "タスク管理アプリ",
+    "description": "React + Firebaseで構築したリアルタイムタスク管理アプリケーション。チーム向けの機能を充実させました。",
+    "image": "/images/works/work2.jpg",
+    "tech": ["React", "Firebase", "Material-UI"],
+    "role": "フロントエンド開発、UI/UX設計、テスト",
+    "period": "2025/07 - 2025/09",
+    "result": "導入企業10社突破、ユーザー満足度向上"
+  },
+  {
+    "id": "work-3",
+    "title": "コーポレートサイトリニューアル",
+    "description": "企業のコーポレートサイトをリニューアル。レスポンシブ対応とSEO最適化を実施しました。",
+    "image": "/images/works/work3.jpg",
+    "tech": ["Next.js", "Tailwind CSS", "Vercel"],
+    "role": "ディレクション、フロントエンド開発、SEO対策",
+    "period": "2025/04 - 2025/06",
+    "result": "検索順位1位獲得、CV率向上"
+  },
+  {
+    "id": "work-4",
+    "title": "ECサイト構築エンハンスメント",
+    "description": "既存のECサイトに新機能を追加し、パフォーマンスとユーザー体験を向上させました。",
+    "image": "/images/works/work4.jpg",
+    "tech": ["Next.js", "TypeScript", "Stripe"],
+    "role": "フロントエンド・バックエンド開発、要件定義、UI設計",
+    "period": "2025/10 - 2025/12",
+    "result": "売上前年比+30%、運用コスト削減"
+  },
+  {
+    "id": "work-5",
+    "title": "携帯ショップサービス受付システム構築",
+    "description": "携帯ショップの機種変更や新規契約の受付システムを構築。ユーザー認証、決済機能、管理画面を実装しました。",
+    "image": "/images/works/work5.jpg",
+    "tech": ["Next.js", "TypeScript", "Stripe"],
+    "role": "フロントエンド・バックエンド開発、要件定義、UI設計",
+    "period": "2025/10 - 2025/12",
+    "result": "売上前年比+30%、運用コスト削減"
+  },
+  {
+    "id": "work-6",
+    "title": "不動産会社向け物件管理システム構築",
+    "description": "不動産会社向けの物件管理システムを構築。ユーザー認証、決済機能、管理画面を実装しました。",
+    "image": "/images/works/work6.jpg",
+    "tech": ["Next.js", "TypeScript", "Stripe"],
+    "role": "フロントエンド・バックエンド開発、要件定義、UI設計",
+    "period": "2025/10 - 2025/12",
+    "result": "売上前年比+30%、運用コスト削減"
+  },
+  {
+    "id": "work-7",
+    "title": "ECサイト構築エンハンスメント",
+    "description": "既存のECサイトに新機能を追加し、パフォーマンスとユーザー体験を向上させました。",
+    "image": "/images/works/work7.jpg",
+    "tech": ["Next.js", "TypeScript", "Stripe"],
+    "role": "フロントエンド・バックエンド開発、要件定義、UI設計",
+    "period": "2025/10 - 2025/12",
+    "result": "売上前年比+30%、運用コスト削減"
+  },
+  {
+    "id": "work-8",
+    "title": "営業向け契約・課金管理システムのエンハンスメント",
+    "description": "営業向けの契約・課金管理システムをエンハンスメントしました。ユーザー認証、決済機能、管理画面を実装しました。",
+    "image": "/images/works/work9.jpg",
+    "tech": ["Next.js", "TypeScript", "Stripe"],
+    "role": "フロントエンド・バックエンド開発、要件定義、UI設計",
+    "period": "2025/10 - 2025/12",
+    "result": "売上前年比+30%、運用コスト削減"
+  },
+  {
+    "id": "work-9",
+    "title": "ECサイト構築",
+    "description": "Next.jsを使用したモダンなECサイト。ユーザー認証、決済機能、管理画面を実装しました。",
+    "image": "/images/works/work1.jpg",
+    "tech": ["Next.js", "TypeScript", "Stripe"],
+    "role": "フロントエンド・バックエンド開発、要件定義、UI設計",
+    "period": "2025/10 - 2025/12",
+    "result": "売上前年比+30%、運用コスト削減"
+  },
+  {
+    "id": "work-10",
+    "title": "タスク管理アプリ",
+    "description": "React + Firebaseで構築したリアルタイムタスク管理アプリケーション。チーム向けの機能を充実させました。",
+    "image": "/images/works/work2.jpg",
+    "tech": ["React", "Firebase", "Material-UI"],
+    "role": "フロントエンド開発、UI/UX設計、テスト",
+    "period": "2025/07 - 2025/09",
+    "result": "導入企業10社突破、ユーザー満足度向上"
+  },
+  {
+    "id": "work-11",
+    "title": "コーポレートサイトリニューアル",
+    "description": "企業のコーポレートサイトをリニューアル。レスポンシブ対応とSEO最適化を実施しました。",
+    "image": "/images/works/work3.jpg",
+    "tech": ["Next.js", "Tailwind CSS", "Vercel"],
+    "role": "ディレクション、フロントエンド開発、SEO対策",
+    "period": "2025/04 - 2025/06",
+    "result": "検索順位1位獲得、CV率向上"
+  }
+]

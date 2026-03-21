@@ -6,6 +6,7 @@ import ProjectCard from './ProjectCard';
 import ProjectDetail from './ProjectDetail';
 import projectsData from '@/data/projects.json';
 import type { Project } from '@/types/project';
+import { cn } from "@/lib/utils";
 
 export default function WorksSection() {
   const projects = projectsData as Project[];
@@ -55,7 +56,6 @@ export default function WorksSection() {
             <ProjectCard
               key={project.id}
               title={project.title}
-              image={project.image}
               selected={activeProjectId === project.id}
               onClick={() => handleProjectClick(project.id)}
             />
@@ -65,9 +65,19 @@ export default function WorksSection() {
           {!showAll && hasMore && (
             <button
               onClick={() => setShowAll(true)}
-              className="flex items-center justify-center h-full min-h-[100px] border border-dashed border-slate-300 rounded-xl text-sm text-slate-500 hover:text-slate-900 hover:border-slate-400 transition"
+              className={cn(
+                "rounded-xl transition-all flex items-center justify-center",
+                "px-3 py-2 text-center",
+                "bg-white border border-dashed border-slate-300",
+                "hover:bg-slate-50 hover:-translate-y-0.5 hover:border-slate-400 hover:text-slate-900",
+                "text-slate-500 hover:text-slate-900",
+                "focus:outline-none focus:ring-2 focus:ring-primary",
+                "w-full h-14"
+              )}
             >
-              +{projects.length - INITIAL_COUNT}
+              <span className="text-xs md:text-sm font-medium">
+                +{projects.length - INITIAL_COUNT} Projects
+              </span>
             </button>
           )}
         </div>

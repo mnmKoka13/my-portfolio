@@ -29,6 +29,8 @@ export default function WorksSection() {
     : projects.slice(0, INITIAL_COUNT);
 
   const detailRef = useRef<HTMLDivElement | null>(null);
+  /** 一度でも See more で展開した後は、Show less 後の See more は既存カード分の delay を付けない */
+  const [hasExpandedOnce, setHasExpandedOnce] = useState(false);
 
   const handleProjectClick = (id: string) => {
     setActiveProjectId(id);
@@ -53,21 +55,36 @@ export default function WorksSection() {
       <div className="w-full max-w-5xl mx-auto">
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 py-3 md:py-6 mb-6">
           {/* プロジェクトカード */}
-          {visibleProjects.map((project, idx) => (
-            <FadeIn key={project.id} delay={idx * 0.08}>
-              <ProjectCard
-                title={project.title}
-                selected={activeProjectId === project.id}
-                onClick={() => handleProjectClick(project.id)}
-              />
-            </FadeIn>
-          ))}
+          {visibleProjects.map((project, idx) => {
+            const staggerIndex = showAll
+              ? idx >= INITIAL_COUNT
+                ? idx - INITIAL_COUNT
+                : 0
+              : idx;
+            const cardDelay = Math.min(staggerIndex * 0.08, 0.4);
+            return (
+              <FadeIn key={project.id} delay={cardDelay}>
+                <ProjectCard
+                  title={project.title}
+                  selected={activeProjectId === project.id}
+                  onClick={() => handleProjectClick(project.id)}
+                />
+              </FadeIn>
+            );
+          })}
 
           {/* See more カード */}
           {!showAll && hasMore && (
-            <FadeIn delay={visibleProjects.length * 0.08}>
+            <FadeIn
+              delay={
+                hasExpandedOnce ? 0 : visibleProjects.length * 0.08
+              }
+            >
               <button
-                onClick={() => setShowAll(true)}
+                onClick={() => {
+                  setHasExpandedOnce(true);
+                  setShowAll(true);
+                }}
                 className={cn(
                   "rounded-xl transition-all flex items-center justify-center",
                   "px-3 py-2 text-center",

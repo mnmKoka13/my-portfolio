@@ -37,10 +37,11 @@ export default function WorksSection() {
 
     // 少し遅らせると安定（レンダリング待ち）
     setTimeout(() => {
-      detailRef.current?.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
+      if (detailRef.current) {
+        const headerHeight = window.innerWidth >= 768 ? 80 : 64;
+        const top = detailRef.current.getBoundingClientRect().top + window.scrollY - headerHeight - 24;
+        window.scrollTo({ top, behavior: "smooth" });
+      }
     }, 50);
   };
 

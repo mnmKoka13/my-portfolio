@@ -1,6 +1,5 @@
 import Image from 'next/image';
-import { Project } from '@/types/works';
-import { cn } from '@/lib/utils';
+import { Project } from '@/types/project';
 
 interface ProjectDetailProps {
   project: Project;
@@ -10,11 +9,11 @@ export default function ProjectDetail({ project }: ProjectDetailProps) {
   return (
     <div className="w-full">
       {/* ヒーローエリア */}
-      <div className="relative w-full h-48 md:h-64 rounded-xl overflow-hidden mb-8">
+      <div className="relative w-full h-64 md:h-72 rounded-xl overflow-hidden mb-8">
         <Image src={project.image} alt={project.title} fill className="object-cover" />
         <div className="absolute inset-0 bg-black/40" />
-        <div className="absolute inset-0 flex flex-col justify-center items-center z-10">
-          <h2 className="text-white text-2xl md:text-4xl font-bold mb-2 drop-shadow-lg">{project.title}</h2>
+        <div className="absolute inset-0 flex flex-col justify-center items-center z-10 px-6 md:px-12 py-4">
+          <h2 className="text-white text-2xl md:text-4xl font-bold mb-2 drop-shadow-lg text-center">{project.title}</h2>
           {project.period && (
             <span className="text-white/80 text-sm md:text-base mb-1">{project.period}</span>
           )}

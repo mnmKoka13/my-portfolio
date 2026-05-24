@@ -1,112 +1,72 @@
 [
   {
     "id": "work-1",
-    "title": "ECサイト構築",
-    "description": "Next.jsを使用したモダンなECサイト。ユーザー認証、決済機能、管理画面を実装しました。",
+    "title": "基地局賃料管理業務改善プロジェクト",
+    "description": "携帯基地局の賃料管理に関わる契約管理システムの改修による業務改善プロジェクト。プロジェクトリーダーとして業務部門の改善要望とりまとめ・要件定義作成・ベンダ折衝・受け入れ試験を担当。Salesforceを活用した業務効率化を推進した。",
     "image": "/images/works/work1.jpg",
-    "tech": ["Next.js", "TypeScript", "Stripe"],
-    "role": "フロントエンド・バックエンド開発、要件定義、UI設計",
-    "period": "2025/10 - 2025/12",
-    "result": "売上前年比+30%、運用コスト削減"
+    "tech": ["Salesforce"],
+    "role": "プロジェクトリーダー（全体5名）",
+    "period": "2016/04 - 2020/01",
+    "result": "契約管理システム改修により業務改善を実現。ベンダコントロールを主導"
   },
   {
     "id": "work-2",
-    "title": "タスク管理アプリ",
-    "description": "React + Firebaseで構築したリアルタイムタスク管理アプリケーション。チーム向けの機能を充実させました。",
+    "title": "通信業界・機種変更店頭受付システム新規開発",
+    "description": "携帯ショップの店頭で機種変更を受け付けるシステムを新規開発。チームリーダーとして30名規模のプロジェクトに参画し、店頭業務要件の落とし込みから設計・開発・テストまでを担当。Vue.js/Nuxt.jsによる店頭クルー用画面3画面の設計・開発を主導した。",
     "image": "/images/works/work2.jpg",
-    "tech": ["React", "Firebase", "Material-UI"],
-    "role": "フロントエンド開発、UI/UX設計、テスト",
-    "period": "2025/07 - 2025/09",
-    "result": "導入企業10社突破、ユーザー満足度向上"
+    "tech": ["JavaScript", "HTML", "CSS", "Java", "PostgreSQL", "Vue.js", "Nuxt.js", "GitLab"],
+    "role": "チームリーダー（全体30名）",
+    "period": "2020/02 - 2021/05",
+    "result": "店頭業務要件を落とし込み、機種変更受付システムをリリース"
   },
   {
     "id": "work-3",
-    "title": "コーポレートサイトリニューアル",
-    "description": "企業のコーポレートサイトをリニューアル。レスポンシブ対応とSEO最適化を実施しました。",
+    "title": "業務委託社員向け稼働管理システム新規開発",
+    "description": "業務委託社員の稼働管理システムを新規開発。プロジェクトリーダー兼スクラムマスターとして5名チームを率い、要件定義から総合テストまで全工程を担当。Vue.js/Nuxt.jsによるフロントエンド6画面、Node.js/ExpressによるREST API、SQL ServerのDB設計・開発をフルスタックで実施。アジャイル開発手法を採用。",
     "image": "/images/works/work3.jpg",
-    "tech": ["Next.js", "Tailwind CSS", "Vercel"],
-    "role": "ディレクション、フロントエンド開発、SEO対策",
-    "period": "2025/04 - 2025/06",
-    "result": "検索順位1位獲得、CV率向上"
+    "tech": ["JavaScript", "HTML", "CSS", "SQL", "Vue.js", "Nuxt.js", "Node.js", "Express", "SQL Server", "Microsoft Azure", "GitLab"],
+    "role": "プロジェクトリーダー / スクラムマスター（全体5名）",
+    "period": "2021/06 - 2021/10",
+    "result": "稼働管理システムをフルスクラッチで新規開発・リリース。PLとして全工程を主導"
   },
   {
     "id": "work-4",
-    "title": "ECサイト構築エンハンスメント",
-    "description": "既存のECサイトに新機能を追加し、パフォーマンスとユーザー体験を向上させました。",
+    "title": "法人向け非定型商材の契約・課金請求管理基盤システム追加開発",
+    "description": "通信業界の法人向け非定型商材を対象とした契約・課金請求管理基盤システムの追加開発。チームリーダーとして顧客折衝・要件定義から総合テストまで全工程を担当。Salesforceフロント・Javaバックエンド・日次バッチ開発を実施し、課金請求バッチ機能追加や商材固有処理の追加開発を主導した。",
     "image": "/images/works/work4.jpg",
-    "tech": ["Next.js", "TypeScript", "Stripe"],
-    "role": "フロントエンド・バックエンド開発、要件定義、UI設計",
-    "period": "2025/10 - 2025/12",
-    "result": "売上前年比+30%、運用コスト削減"
+    "tech": ["Java", "シェルスクリプト", "SQL", "PostgreSQL", "Spring Boot", "Salesforce", "GitLab"],
+    "role": "チームリーダー（全体50名・チーム最大10名）",
+    "period": "2021/11 - 2023/05",
+    "result": "要件定義〜総合テストまで全工程をリード。顧客折衝からリリースまでチームリーダーとして主導"
   },
   {
     "id": "work-5",
-    "title": "携帯ショップサービス受付システム構築",
-    "description": "携帯ショップの機種変更や新規契約の受付システムを構築。ユーザー認証、決済機能、管理画面を実装しました。",
+    "title": "ChatGPT キャラクター作成システムPoC",
+    "description": "ChatGPT APIを活用したキャラクター作成システムのPoC開発。チームリーダーとして顧客折衝・技術調査・要件定義・見積作成を担当し、6画面の基本設計を主導。AWS Lambda/S3/CloudFrontのサーバーレス構成でシステムを設計した。",
     "image": "/images/works/work5.jpg",
-    "tech": ["Next.js", "TypeScript", "Stripe"],
-    "role": "フロントエンド・バックエンド開発、要件定義、UI設計",
-    "period": "2025/10 - 2025/12",
-    "result": "売上前年比+30%、運用コスト削減"
+    "tech": ["Python", "JavaScript", "DynamoDB", "Vue.js", "AWS Lambda", "AWS S3", "AWS CloudFront", "ChatGPT API"],
+    "role": "チームリーダー（全体5名）",
+    "period": "2023/06 - 2023/09",
+    "result": "ChatGPT APIを活用した新規PoCを要件定義〜基本設計まで主導し、技術検証に成功"
   },
   {
     "id": "work-6",
-    "title": "不動産会社向け物件管理システム構築",
-    "description": "不動産会社向けの物件管理システムを構築。ユーザー認証、決済機能、管理画面を実装しました。",
+    "title": "予測型経営DXサービス システム開発",
+    "description": "AIを活用した予測型経営DXサービスの開発。SAP UI5によるフロントエンドの機能修正・追加、ODataプロトコルを用いたSpringBoot REST APIのバックエンド開発を担当。JUnitによる単体テスト実装・結合試験も実施し、開発メンバーのタスク管理・スケジュール管理も兼務した。",
     "image": "/images/works/work6.jpg",
-    "tech": ["Next.js", "TypeScript", "Stripe"],
-    "role": "フロントエンド・バックエンド開発、要件定義、UI設計",
-    "period": "2025/10 - 2025/12",
-    "result": "売上前年比+30%、運用コスト削減"
+    "tech": ["JavaScript", "Java", "HANA DB", "SAP UI5", "Spring Boot", "AWS", "CodeCommit"],
+    "role": "メンバー（全体9名）",
+    "period": "2023/10 - 2024/04",
+    "result": "ODataプロトコル採用のREST API開発を主担当として、DXサービスの機能拡充に貢献"
   },
   {
     "id": "work-7",
-    "title": "ECサイト構築エンハンスメント",
-    "description": "既存のECサイトに新機能を追加し、パフォーマンスとユーザー体験を向上させました。",
+    "title": "薬局向けポータルサイトの保守運用",
+    "description": "薬局の薬剤注文等を管理するポータルサイトの運用保守。Vue.jsによるフロントエンドの機能修正・追加、SpringBoot REST APIのバックエンド開発を担当。リリース作業・ライブラリアン・チームのタスク管理・障害対応も兼務し、3名の小規模チームで幅広い役割を担った。",
     "image": "/images/works/work7.jpg",
-    "tech": ["Next.js", "TypeScript", "Stripe"],
-    "role": "フロントエンド・バックエンド開発、要件定義、UI設計",
-    "period": "2025/10 - 2025/12",
-    "result": "売上前年比+30%、運用コスト削減"
-  },
-  {
-    "id": "work-8",
-    "title": "営業向け契約・課金管理システムのエンハンスメント",
-    "description": "営業向けの契約・課金管理システムをエンハンスメントしました。ユーザー認証、決済機能、管理画面を実装しました。",
-    "image": "/images/works/work9.jpg",
-    "tech": ["Next.js", "TypeScript", "Stripe"],
-    "role": "フロントエンド・バックエンド開発、要件定義、UI設計",
-    "period": "2025/10 - 2025/12",
-    "result": "売上前年比+30%、運用コスト削減"
-  },
-  {
-    "id": "work-9",
-    "title": "ECサイト構築",
-    "description": "Next.jsを使用したモダンなECサイト。ユーザー認証、決済機能、管理画面を実装しました。",
-    "image": "/images/works/work1.jpg",
-    "tech": ["Next.js", "TypeScript", "Stripe"],
-    "role": "フロントエンド・バックエンド開発、要件定義、UI設計",
-    "period": "2025/10 - 2025/12",
-    "result": "売上前年比+30%、運用コスト削減"
-  },
-  {
-    "id": "work-10",
-    "title": "タスク管理アプリ",
-    "description": "React + Firebaseで構築したリアルタイムタスク管理アプリケーション。チーム向けの機能を充実させました。",
-    "image": "/images/works/work2.jpg",
-    "tech": ["React", "Firebase", "Material-UI"],
-    "role": "フロントエンド開発、UI/UX設計、テスト",
-    "period": "2025/07 - 2025/09",
-    "result": "導入企業10社突破、ユーザー満足度向上"
-  },
-  {
-    "id": "work-11",
-    "title": "コーポレートサイトリニューアル",
-    "description": "企業のコーポレートサイトをリニューアル。レスポンシブ対応とSEO最適化を実施しました。",
-    "image": "/images/works/work3.jpg",
-    "tech": ["Next.js", "Tailwind CSS", "Vercel"],
-    "role": "ディレクション、フロントエンド開発、SEO対策",
-    "period": "2025/04 - 2025/06",
-    "result": "検索順位1位獲得、CV率向上"
+    "tech": ["JavaScript", "Java", "PostgreSQL", "Vue.js","Spring Boot", "AWS", "CodeCommit"],
+    "role": "メンバー（全体3名）",
+    "period": "2024/05 - 2025/03",
+    "result": "保守運用に加えリリース管理・タスク管理・障害対応を兼務し、安定運用に貢献"
   }
 ]

@@ -6,5 +6,6 @@ export interface Work {
   tags: string[];
   url?: string;
   github?: string;
-  period?: string;
+  start?: string;
+  end?: string | null;
 }

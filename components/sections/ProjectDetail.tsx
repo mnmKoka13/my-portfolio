@@ -14,8 +14,10 @@ export default function ProjectDetail({ project }: ProjectDetailProps) {
         <div className="absolute inset-0 bg-black/40" />
         <div className="absolute inset-0 flex flex-col justify-center items-center z-10 px-6 md:px-12 py-4">
           <h2 className="text-white text-2xl md:text-4xl font-bold mb-2 drop-shadow-lg text-center">{project.title}</h2>
-          {project.period && (
-            <span className="text-white/80 text-sm md:text-base mb-1">{project.period}</span>
+          {project.start && (
+            <span className="text-white/80 text-sm md:text-base mb-1">
+              {project.start.slice(0, 7).replace('-', '/')} - {project.end ? project.end.slice(0, 7).replace('-', '/') : '現在'}
+            </span>
           )}
           {project.tech && project.tech.length > 0 && (
             <div className="flex flex-wrap gap-2 justify-center mt-2">

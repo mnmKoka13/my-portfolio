@@ -5,6 +5,7 @@ export type Project = {
   image: string;
   tech: string[];
   role: string;
-  period: string;
+  start: string;
+  end: string | null;
   result: string;
 };

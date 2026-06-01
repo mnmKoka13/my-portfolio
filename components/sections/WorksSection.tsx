@@ -10,7 +10,9 @@ import type { Project } from '@/types/project';
 import { cn } from "@/lib/utils";
 
 export default function WorksSection() {
-  const projects = projectsData as Project[];
+  const projects = [...(projectsData as Project[])].sort(
+    (a, b) => new Date(b.start).getTime() - new Date(a.start).getTime()
+  );
 
   const INITIAL_COUNT = 9;
 

@@ -116,8 +116,10 @@ export default function WorksCarousel({ works }: WorksCarouselProps) {
                   </div>
 
                   {/* Period */}
-                  {work.period && (
-                    <p className="text-sm text-slate-500 mt-2">{work.period}</p>
+                  {work.start && (
+                    <p className="text-sm text-slate-500 mt-2">
+                      {work.start.slice(0, 7).replace('-', '/')} - {work.end ? work.end.slice(0, 7).replace('-', '/') : '現在'}
+                    </p>
                   )}
                 </div>
               </div>

@@ -2,40 +2,56 @@
   {
     "category": "フロントエンド",
     "skills": [
+      { "name": "TypeScript" },
       { "name": "React" },
       { "name": "Next.js" },
-      { "name": "TypeScript" },
       { "name": "Vue.js" },
+      { "name": "Nuxt.js" },
+      { "name": "JavaScript" },
+      { "name": "SAP UI5" },
       { "name": "Tailwind CSS" }
     ]
   },
   {
     "category": "バックエンド",
     "skills": [
+      { "name": "Java" },
+      { "name": "Kotlin" },
+      { "name": "Spring Boot" },
       { "name": "Node.js" },
       { "name": "Express" },
-      { "name": "Python" },
-      { "name": "Django" },
-      { "name": "PostgreSQL" }
+      { "name": "Python" }
     ]
   },
   {
-    "category": "インフラ・ツール",
+    "category": "データベース",
+    "skills": [
+      { "name": "PostgreSQL" },
+      { "name": "SQL Server" },
+      { "name": "DynamoDB" },
+      { "name": "Redis" },
+      { "name": "HANA DB" }
+    ]
+  },
+  {
+    "category": "インフラ・クラウド",
     "skills": [
       { "name": "Docker" },
+      { "name": "Kubernetes" },
       { "name": "AWS" },
-      { "name": "Vercel" },
-      { "name": "Git" },
-      { "name": "GitHub Actions" }
+      { "name": "Microsoft Azure" },
+      { "name": "Screwdriver" }
     ]
   },
   {
-    "category": "その他",
+    "category": "ツール・その他",
     "skills": [
-      { "name": "Figma" },
+      { "name": "Salesforce" },
+      { "name": "Git / GitLab" },
+      { "name": "Splunk" },
       { "name": "REST API" },
-      { "name": "GraphQL" },
-      { "name": "Agile/Scrum" }
+      { "name": "Agile/Scrum" },
+      { "name": "生成AI活用" }
     ]
   }
 ]

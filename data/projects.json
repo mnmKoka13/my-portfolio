@@ -6,7 +6,8 @@
     "image": "/images/works/work1.jpg",
     "tech": ["Salesforce"],
     "role": "プロジェクトリーダー（全体5名）",
-    "period": "2016/04 - 2020/01",
+    "start": "2016-04-01",
+    "end": "2020-01-01",
     "result": "契約管理システム改修により業務改善を実現。ベンダコントロールを主導"
   },
   {
@@ -16,7 +17,8 @@
     "image": "/images/works/work2.jpg",
     "tech": ["JavaScript", "HTML", "CSS", "Java", "PostgreSQL", "Vue.js", "Nuxt.js", "GitLab"],
     "role": "チームリーダー（全体30名）",
-    "period": "2020/02 - 2021/05",
+    "start": "2020-02-01",
+    "end": "2021-05-01",
     "result": "店頭業務要件を落とし込み、機種変更受付システムをリリース"
   },
   {
@@ -26,7 +28,8 @@
     "image": "/images/works/work3.jpg",
     "tech": ["JavaScript", "HTML", "CSS", "SQL", "Vue.js", "Nuxt.js", "Node.js", "Express", "SQL Server", "Microsoft Azure", "GitLab"],
     "role": "プロジェクトリーダー / スクラムマスター（全体5名）",
-    "period": "2021/06 - 2021/10",
+    "start": "2021-06-01",
+    "end": "2021-10-01",
     "result": "稼働管理システムをフルスクラッチで新規開発・リリース。PLとして全工程を主導"
   },
   {
@@ -36,7 +39,8 @@
     "image": "/images/works/work4.jpg",
     "tech": ["Java", "シェルスクリプト", "SQL", "PostgreSQL", "Spring Boot", "Salesforce", "GitLab"],
     "role": "チームリーダー（全体50名・チーム最大10名）",
-    "period": "2021/11 - 2023/05",
+    "start": "2021-11-01",
+    "end": "2023-05-01",
     "result": "要件定義〜総合テストまで全工程をリード。顧客折衝からリリースまでチームリーダーとして主導"
   },
   {
@@ -46,7 +50,8 @@
     "image": "/images/works/work5.jpg",
     "tech": ["Python", "JavaScript", "DynamoDB", "Vue.js", "AWS Lambda", "AWS S3", "AWS CloudFront", "ChatGPT API"],
     "role": "チームリーダー（全体5名）",
-    "period": "2023/06 - 2023/09",
+    "start": "2023-06-01",
+    "end": "2023-09-01",
     "result": "ChatGPT APIを活用した新規PoCを要件定義〜基本設計まで主導し、技術検証に成功"
   },
   {
@@ -56,7 +61,8 @@
     "image": "/images/works/work6.jpg",
     "tech": ["JavaScript", "Java", "HANA DB", "SAP UI5", "Spring Boot", "AWS", "CodeCommit"],
     "role": "メンバー（全体9名）",
-    "period": "2023/10 - 2024/04",
+    "start": "2023-10-01",
+    "end": "2024-04-01",
     "result": "ODataプロトコル採用のREST API開発を主担当として、DXサービスの機能拡充に貢献"
   },
   {
@@ -66,7 +72,19 @@
     "image": "/images/works/work7.jpg",
     "tech": ["JavaScript", "Java", "PostgreSQL", "Vue.js","Spring Boot", "AWS", "CodeCommit"],
     "role": "メンバー（全体3名）",
-    "period": "2024/05 - 2025/03",
+    "start": "2024-05-01",
+    "end": "2025-03-01",
     "result": "保守運用に加えリリース管理・タスク管理・障害対応を兼務し、安定運用に貢献"
+  },
+  {
+    "id": "work-8",
+    "title": "C向け大規模ECサイト保守運用・エンハンス開発",
+    "description": "BtoC向け大規模ECサイトのマイクロサービスアーキテクチャ環境における保守運用・エンハンス開発。フロントエンド（Vue.js2、React/TypeScript）の機能追加・改修とVue.js2からReactへの刷新対応、BFF（Spring Boot/Kotlin）でのREST API開発を担当。商品検索・商品詳細・キャンペーン・クーポン機能等の開発や、障害調査・脆弱性対応・バージョンアップ対応などの保守運用も幅広く担う。コードレビュー・テスト仕様書レビューや、Screwdriverを用いたCI/CDパイプラインの改修・リリース作業も実施。生成AI（ChatGPT・GitHub Copilot・Claude）を活用した実装・レビュー・テスト業務の効率化も推進。",
+    "image": "/images/works/work8.jpg",
+    "tech": ["TypeScript", "Kotlin", "Vue.js", "React", "Next.js", "Spring Boot", "Redis", "Docker", "Kubernetes", "Screwdriver", "Splunk"],
+    "role": "メンバー（全体25名）",
+    "start": "2025-04-01",
+    "end": null,
+    "result": "マイクロサービスアーキテクチャ環境での大規模ECサイト開発に従事。フロントモダナイゼーション（Vue.js2→React）やBFF開発を担当し、生成AIを活用した開発効率化を推進"
   }
 ]

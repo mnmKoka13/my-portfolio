@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 import { scrollToSection } from '@/lib/utils';
 import MobileMenu from './MobileMenu';
 
@@ -60,9 +61,16 @@ export default function Header() {
             {/* Logo */}
             <button
               onClick={() => handleMenuClick('top')}
-              className="text-xl md:text-2xl font-bold hover:opacity-70 transition-opacity"
+              className="flex items-center gap-2 hover:opacity-70 transition-opacity"
             >
-              portfolio
+              <Image
+                src="/images/icon/portfolio-icon.png"
+                alt="portfolio icon"
+                width={40}
+                height={40}
+                className="w-10 h-10 md:w-10 md:h-10"
+              />
+              <span className="text-xl md:text-2xl font-bold">mk portfolio</span>
             </button>
 
             {/* Desktop Navigation */}

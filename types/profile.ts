@@ -3,4 +3,5 @@ export interface Profile {
   role: string;
   image: string;
   description: string[];
+  hobbies: string;
 }

@@ -14,13 +14,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "ポートフォリオ | フリーランスエンジニア",
-  description: "フルスタックエンジニアのポートフォリオサイト。Web開発の実績・スキルをご紹介します。",
+  title: "小門真愛のポートフォリオ",
+  description: "フリーランスエンジニア小門真愛のポートフォリオサイト。Web開発の実績・スキルをご紹介します。",
   keywords: ["フリーランス", "エンジニア", "Next.js", "React", "ポートフォリオ"],
-  authors: [{ name: "山田太郎" }],
+  authors: [{ name: "小門真愛" }],
   openGraph: {
-    title: "ポートフォリオ | フリーランスエンジニア",
-    description: "フルスタックエンジニアのポートフォリオサイト",
+    title: "小門真愛 | ポートフォリオ",
+    description: "フリーランスエンジニア小門真愛のポートフォリオ",
     type: "website",
     locale: "ja_JP",
   },

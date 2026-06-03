@@ -546,21 +546,21 @@ export default nextConfig;
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: '山田太郎 | フリーランスエンジニア ポートフォリオ',
-  description: 'フルスタックエンジニアのポートフォリオサイト。Web開発の実績・スキルをご紹介します。',
+  title: '小門真愛 | ポートフォリオ',
+  description: 'フリーランスエンジニア小門真愛のポートフォリオサイト。Web開発の実績・スキルをご紹介します。',
   keywords: ['フリーランス', 'エンジニア', 'Next.js', 'React'],
-  authors: [{ name: '山田太郎' }],
+  authors: [{ name: '小門真愛' }],
   openGraph: {
-    title: '山田太郎 | ポートフォリオ',
-    description: 'フリーランスエンジニアのポートフォリオ',
+    title: '小門真愛 | ポートフォリオ',
+    description: 'フリーランスエンジニア小門真愛のポートフォリオ',
     type: 'website',
     locale: 'ja_JP',
     images: ['/images/og-image.jpg'],
   },
   twitter: {
     card: 'summary_large_image',
-    title: '山田太郎 | ポートフォリオ',
-    description: 'フリーランスエンジニアのポートフォリオ',
+    title: '小門真愛 | ポートフォリオ',
+    description: 'フリーランスエンジニア小門真愛のポートフォリオ',
     images: ['/images/og-image.jpg'],
   },
 };

@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "小門真愛のポートフォリオ",
+  title: "小門真愛 | ポートフォリオ",
   description: "フリーランスエンジニア小門真愛のポートフォリオサイト。Web開発の実績・スキルをご紹介します。",
   keywords: ["フリーランス", "エンジニア", "Next.js", "React", "ポートフォリオ"],
   authors: [{ name: "小門真愛" }],

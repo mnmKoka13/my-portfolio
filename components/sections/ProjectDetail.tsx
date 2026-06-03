@@ -9,20 +9,19 @@ export default function ProjectDetail({ project }: ProjectDetailProps) {
   return (
     <div className="w-full">
       {/* ヒーローエリア */}
-      <div className="relative w-full h-64 md:h-72 rounded-xl overflow-hidden mb-8">
-        <Image src={project.image} alt={project.title} fill className="object-cover" />
-        <div className="absolute inset-0 bg-black/40" />
+      <div className="relative w-full h-64 md:h-72 rounded-xl overflow-hidden mb-8 bg-white">
+        <Image src="/images/works/project-background.png" alt={project.title} fill className="object-cover opacity-20" />
         <div className="absolute inset-0 flex flex-col justify-center items-center z-10 px-6 md:px-12 py-4">
-          <h2 className="text-white text-2xl md:text-4xl font-bold mb-2 drop-shadow-lg text-center">{project.title}</h2>
+          <h2 className="text-2xl md:text-4xl font-bold mb-2 text-center">{project.title}</h2>
           {project.start && (
-            <span className="text-white/80 text-sm md:text-base mb-1">
+            <span className="text-slate-500 text-sm md:text-base mb-1">
               {project.start.slice(0, 7).replace('-', '/')} - {project.end ? project.end.slice(0, 7).replace('-', '/') : '現在'}
             </span>
           )}
           {project.tech && project.tech.length > 0 && (
             <div className="flex flex-wrap gap-2 justify-center mt-2">
               {project.tech.map((t) => (
-                <span key={t} className="bg-white/20 text-white text-xs px-2 py-1 rounded-full">
+                <span key={t} className="bg-slate-100 text-slate-700 text-xs px-2 py-1 rounded-full">
                   {t}
                 </span>
               ))}

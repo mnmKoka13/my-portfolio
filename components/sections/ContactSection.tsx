@@ -39,7 +39,7 @@ export default function ContactSection() {
   };
 
   const sharedClass =
-    "flex items-center gap-3 px-6 py-3 bg-white rounded-xl shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300";
+    "flex items-center gap-3 px-6 py-3 bg-white rounded-xl shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 text-foreground";
 
   return (
     <SectionWrapper id="contact" title="Contact" className="bg-white">
@@ -55,7 +55,7 @@ export default function ContactSection() {
               {contact.icon === 'email' ? (
                 <button onClick={() => handleCopy(contact.url, index)} className={sharedClass}>
                   {getIcon(contact.icon)}
-                  <span className="font-medium w-24 text-left transition-all duration-200">
+                  <span className="font-medium">
                     {copiedIndex === index ? 'Copied !' : contact.label}
                   </span>
                 </button>

@@ -49,8 +49,8 @@ export default function WorksSection() {
 
   return (
     <SectionWrapper
-      id="works"
-      title="Works"
+      id="business-projects"
+      title="Business Projects"
       className="bg-secondary/30"
       fullWidth
     >

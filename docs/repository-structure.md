@@ -20,21 +20,25 @@ my-portfolio/
 │   │   ├── TopSection.tsx
 │   │   ├── AboutSection.tsx
 │   │   ├── WorksSection.tsx
+│   │   ├── PersonalWorksSection.tsx
 │   │   ├── ProfileSection.tsx
 │   │   ├── SkillsSection.tsx
 │   │   ├── ContactSection.tsx
 │   │   ├── AvailabilitySection.tsx
-│   │   ├── ProjectCard.tsx     # Works カルーセルの個別カード
-│   │   └── ProjectDetail.tsx   # 制作物の詳細表示
+│   │   ├── ProjectCard.tsx         # 案件カード（Business Projects・Personal Works 共用）
+│   │   ├── ProjectDetail.tsx       # Business Projects の詳細表示
+│   │   └── PersonalWorkDetail.tsx  # Personal Works の詳細表示（ImageCarousel を含む）
 │   └── ui/
 │       ├── SectionWrapper.tsx  # 共通パディング・セクションタイトル
-│       └── WorksCarousel.tsx   # Embla Carousel ラッパー
+│       ├── WorksCarousel.tsx   # Embla Carousel ラッパー（未使用）
+│       └── ImageCarousel.tsx   # 画像配列を受け取る汎用カルーセル（Personal Works で使用）
 │
 ├── data/                       # コンテンツストア（JSON）
 │   ├── top.json                # TOP・About セクションのコンテンツ
 │   ├── profile.json            # Profile セクションのコンテンツ
-│   ├── works.json              # Works セクションの制作物一覧
-│   ├── projects.json           # （予備・未使用）
+│   ├── projects.json           # Business Projects セクションの企業案件一覧
+│   ├── personal-works.json     # Personal Works セクションの個人制作一覧
+│   ├── works.json              # （未使用）
 │   ├── skills.json             # Skills セクションのスキル一覧
 │   ├── contact.json            # Contact セクションのリンク一覧
 │   └── availability.json       # Availability セクションの稼働状況
@@ -63,6 +67,7 @@ my-portfolio/
 │   ├── profile.ts
 │   ├── works.ts
 │   ├── project.ts
+│   ├── personal-work.ts
 │   ├── skills.ts
 │   ├── contact.ts
 │   └── availability.ts

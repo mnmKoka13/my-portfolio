@@ -6,7 +6,8 @@
 
 | 日本語 | 英語（コード上） | 定義 |
 |---|---|---|
-| 制作物 / プロジェクト | `Project` / `Work` | 過去に携わった開発案件・成果物の1件。`data/projects.json` で管理 |
+| 企業案件 / プロジェクト | `Project` | 過去に携わった企業向け開発案件の1件。`data/projects.json` で管理。Business Projects セクションに表示 |
+| 個人制作 | `PersonalWork` | 個人で開発したアプリ・サービスの1件。`data/personal-works.json` で管理。Personal Works セクションに表示 |
 | スキル | `Skill` | エンジニアが習得・使用した技術や手法の1項目 |
 | スキルカテゴリ | `SkillCategory` | スキルを分類するグループ（フロントエンド・バックエンド等） |
 | コンタクト | `ContactLink` | 外部プラットフォーム（GitHub・X・メール）への連絡先リンク |
@@ -48,7 +49,8 @@
 
 | 日本語 | コード上の英語 |
 |---|---|
-| 制作物 / 実績 | `project` / `work` |
+| 企業案件 | `project` |
+| 個人制作 | `personalWork` |
 | スキル | `skill` |
 | カテゴリ | `category` |
 | 連絡先 | `contact` |

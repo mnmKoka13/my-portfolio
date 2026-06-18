@@ -7,9 +7,10 @@ import useEmblaCarousel from 'embla-carousel-react';
 interface ImageCarouselProps {
   images: string[];
   alt: string;
+  className?: string;
 }
 
-export default function ImageCarousel({ images, alt }: ImageCarouselProps) {
+export default function ImageCarousel({ images, alt, className }: ImageCarouselProps) {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
   const [selectedIndex, setSelectedIndex] = useState(0);
 
@@ -30,7 +31,7 @@ export default function ImageCarousel({ images, alt }: ImageCarouselProps) {
   const hasMultiple = images.length > 1;
 
   return (
-    <div className="relative w-full h-64 md:h-80 rounded-xl overflow-hidden bg-slate-100">
+    <div className={className ?? 'relative w-full h-64 md:h-80 rounded-xl overflow-hidden bg-slate-100'}>
       <div className="overflow-hidden h-full" ref={emblaRef}>
         <div className="flex h-full">
           {images.map((src, i) => (

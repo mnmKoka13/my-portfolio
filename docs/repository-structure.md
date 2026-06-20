@@ -30,7 +30,6 @@ my-portfolio/
 │   │   └── PersonalWorkDetail.tsx  # Personal Works の詳細表示（ImageCarousel を含む）
 │   └── ui/
 │       ├── SectionWrapper.tsx  # 共通パディング・セクションタイトル
-│       ├── WorksCarousel.tsx   # Embla Carousel ラッパー（未使用）
 │       └── ImageCarousel.tsx   # 画像配列を受け取る汎用カルーセル（Personal Works で使用）
 │
 ├── data/                       # コンテンツストア（JSON）
@@ -38,7 +37,6 @@ my-portfolio/
 │   ├── profile.json            # Profile セクションのコンテンツ
 │   ├── projects.json           # Business Projects セクションの企業案件一覧
 │   ├── personal-works.json     # Personal Works セクションの個人制作一覧
-│   ├── works.json              # （未使用）
 │   ├── skills.json             # Skills セクションのスキル一覧
 │   ├── contact.json            # Contact セクションのリンク一覧
 │   └── availability.json       # Availability セクションの稼働状況
@@ -65,7 +63,6 @@ my-portfolio/
 │   ├── index.ts                # 全型の再エクスポート
 │   ├── top.ts
 │   ├── profile.ts
-│   ├── works.ts
 │   ├── project.ts
 │   ├── personal-work.ts
 │   ├── skills.ts

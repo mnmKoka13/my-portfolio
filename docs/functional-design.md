@@ -44,19 +44,6 @@
 | `description` | `string[]` | 自己紹介文（複数段落） |
 | `hobbies` | `string` | 趣味 |
 
-### Work（`data/works.json` / `types/works.ts`）
-
-| フィールド | 型 | 説明 |
-|---|---|---|
-| `id` | `string` | 一意識別子（例: `work-1`） |
-| `title` | `string` | 制作物タイトル |
-| `description` | `string` | 説明文 |
-| `image` | `string` | サムネイル画像パス |
-| `tags` | `string[]` | 使用技術タグ |
-| `url` | `string?` | 公開 URL（任意） |
-| `github` | `string?` | GitHub リンク（任意） |
-| `period` | `string?` | 制作期間（例: `2025/10 - 2025/12`）（任意） |
-
 ### PersonalWork（`data/personal-works.json` / `types/personal-work.ts`）
 
 | フィールド | 型 | 説明 |

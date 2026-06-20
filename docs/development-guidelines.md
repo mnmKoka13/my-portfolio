@@ -50,8 +50,8 @@ className={`rounded-xl transition-all ${isActive ? 'bg-primary text-white' : ''}
 - コンテンツは `data/*.json` から直接 import する。fetch・サーバーアクションは使わない
 
 ```tsx
-import worksData from '@/data/works.json';
-import type { Work } from '@/types';
+import projectsData from '@/data/projects.json';
+import type { Project } from '@/types';
 ```
 
 ### 型定義
@@ -67,8 +67,8 @@ import type { Work } from '@/types';
 | コンポーネント関数 | PascalCase | `WorksSection` |
 | Props インターフェース | PascalCase + `Props` | `WorksSectionProps` |
 | 変数・関数 | camelCase | `activeProjectId`, `handleProjectClick` |
-| JSON データファイル | kebab-case | `works.json`, `availability.json` |
-| セクション `id` 属性 | kebab-case | `id="works"`, `id="about"` |
+| JSON データファイル | kebab-case | `projects.json`, `availability.json` |
+| セクション `id` 属性 | kebab-case | `id="business-projects"`, `id="about"` |
 | CSS カスタムプロパティ | kebab-case | `--primary-light` |
 
 ## スタイリング規約
@@ -114,13 +114,13 @@ npm run build   # TypeScript 型チェック + 静的エクスポート
 
 #### スコープ例
 
-`top` / `about` / `works` / `profile` / `skills` / `contact` / `availability` / `layout` / `ui` / `deps` / `metadata`
+`top` / `about` / `business-projects` / `personal-works` / `profile` / `skills` / `contact` / `availability` / `layout` / `ui` / `deps` / `metadata`
 
 #### 良い例・悪い例
 
 ```bash
 # ✅ 良い例
-feat(works): 制作物カードにサムネイル画像を追加
+feat(personal-works): 個人制作カードにサムネイル画像を追加
 fix(contact): メールリンクに mailto: プレフィックスを付与
 docs(readme): セットアップ手順を追記
 

@@ -4,9 +4,9 @@
     "title": "運動リマインダー",
     "description": "「明日から本気出す」を言い続けた自分のために作ったiOSアプリ。\nInstagramやYouTubeのフィットネス動画をクリップしてお気に入りを一元管理できる。\n逃げ場をなくすカスタムリマインダーと運動ログ機能つき。",
     "images": [
-      "/images/works/work1.jpg",
-      "/images/works/work2.jpg",
-      "/images/works/work3.jpg"
+      "/images/works/FitnessReminder-appstore.png",
+      "/images/works/FitnessReminder-appstore2.png",
+      "/images/works/FitnessReminder-appstore3.png"
     ],
     "tech": ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
     "github": "https://github.com/mnmKoka13/fitness-reminder",

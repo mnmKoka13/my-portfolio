@@ -2,6 +2,7 @@
   {
     "id": "personal-work-1",
     "title": "運動リマインダー",
+    "type": "mobile",
     "description": "「明日から本気出す」を言い続けた自分のために作ったiOSアプリ。\nInstagramやYouTubeのフィットネス動画をクリップしてお気に入りを一元管理できる。\n逃げ場をなくすカスタムリマインダーと運動ログ機能つき。",
     "images": [
       "/images/works/FitnessReminder-appstore.png",
@@ -15,10 +16,10 @@
   {
     "id": "personal-work-2",
     "title": "ポートフォリオサイト",
+    "type": "web",
     "description": "このサイト自体。Next.js App Router と Tailwind CSS で構築したポートフォリオ。\nJSON ファイルの編集のみでコンテンツを更新できる設計にしている。",
     "images": [
-      "/images/works/project-background.png",
-      "/images/works/work1.jpg"
+      "/images/works/portfolio1.png"
     ],
     "tech": ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
     "github": "https://github.com/example/portfolio",

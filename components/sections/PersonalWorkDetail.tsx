@@ -9,11 +9,15 @@ export default function PersonalWorkDetail({ work }: PersonalWorkDetailProps) {
   return (
     <div className="w-full flex flex-col md:flex-row gap-8 items-start">
       <div className="w-full md:w-auto md:flex-shrink-0 flex justify-center">
-        <div className="w-48 md:w-56">
+        <div className={work.type === 'mobile' ? 'w-48 md:w-56' : 'w-64 md:w-80'}>
           <ImageCarousel
             images={work.images}
             alt={work.title}
-            className="relative w-full aspect-[9/19] rounded-2xl overflow-hidden bg-slate-100 shadow-lg"
+            className={
+              work.type === 'mobile'
+                ? 'relative w-full aspect-[9/19] rounded-2xl overflow-hidden bg-slate-100 shadow-lg'
+                : 'relative w-full aspect-video rounded-xl overflow-hidden bg-slate-100 shadow-lg'
+            }
           />
         </div>
       </div>

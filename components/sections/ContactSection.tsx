@@ -1,4 +1,4 @@
-"use client";
+'use client';
 import { useState } from 'react';
 import SectionWrapper from '@/components/ui/SectionWrapper';
 import FadeIn from '@/components/animations/FadeIn';
@@ -39,7 +39,7 @@ export default function ContactSection() {
   };
 
   const sharedClass =
-    "flex items-center gap-3 px-6 py-3 bg-white rounded-xl shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 text-foreground";
+    'flex items-center gap-3 px-6 py-3 bg-white rounded-xl shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 text-foreground';
 
   return (
     <SectionWrapper id="contact" title="Contact" className="bg-white">

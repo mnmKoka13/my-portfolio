@@ -47,7 +47,7 @@ export default function AboutSection() {
             <FadeIn key={index} delay={index * 0.2}>
               <p
                 className={`text-lg text-slate-700 leading-[1.9] whitespace-pre-line ${
-                  index > 0 ? "mt-[1.2em]" : ""
+                  index > 0 ? 'mt-[1.2em]' : ''
                 }`}
               >
                 {parts.map((part, i) => (

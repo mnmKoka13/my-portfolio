@@ -6,7 +6,7 @@ import SectionWrapper from '@/components/ui/SectionWrapper';
 import ProjectCard from './ProjectCard';
 import ProjectDetail from './ProjectDetail';
 import projectsData from '@/data/projects.json';
-import type { Project } from '@/types/project';
+import type { Project } from '@/types';
 import { cn } from "@/lib/utils";
 
 export default function WorksSection() {

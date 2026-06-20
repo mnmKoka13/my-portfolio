@@ -42,7 +42,6 @@ my-portfolio/
 │       └── FadeIn.tsx          # フェードインアニメーション
 ├── data/
 │   ├── profile.json        # プロフィールデータ
-│   ├── works.json          # 制作物データ
 │   ├── skills.json         # スキルデータ
 │   ├── contact.json        # コンタクト情報
 │   └── availability.json   # 稼働可能状況
@@ -54,7 +53,6 @@ my-portfolio/
 │   └── favicon.ico
 ├── types/
 │   ├── profile.ts          # プロフィール型定義
-│   ├── works.ts            # 制作物型定義
 │   ├── skills.ts           # スキル型定義
 │   ├── contact.ts          # コンタクト型定義
 │   ├── availability.ts     # 稼働状況型定義
@@ -80,20 +78,6 @@ export interface Profile {
   bio: string;
   image: string;
   description: string[];
-}
-```
-
-#### types/works.ts
-```typescript
-export interface Work {
-  id: string;
-  title: string;
-  description: string;
-  image: string;
-  tags: string[];
-  url?: string;
-  github?: string;
-  period?: string;
 }
 ```
 
@@ -144,21 +128,6 @@ export interface Availability {
     "ユーザー体験を重視した設計・実装を得意としています"
   ]
 }
-```
-
-#### data/works.json
-```json
-[
-  {
-    "id": "work-1",
-    "title": "ECサイト構築",
-    "description": "Next.jsを使用したモダンなECサイト",
-    "image": "/images/works/work1.jpg",
-    "tags": ["Next.js", "TypeScript", "Stripe"],
-    "url": "https://example.com",
-    "period": "2024/10 - 2024/12"
-  }
-]
 ```
 
 #### data/skills.json
@@ -259,13 +228,6 @@ interface MobileMenuProps {
 - ドラッグ/スワイプ対応
 - レスポンシブ対応
 
-**Props:**
-```typescript
-interface WorksSectionProps {
-  works: Work[];
-}
-```
-
 #### SkillsSection.tsx
 **表示内容:**
 - カテゴリ別スキル一覧
@@ -304,7 +266,6 @@ interface WorksSectionProps {
 **Props:**
 ```typescript
 interface WorksCarouselProps {
-  works: Work[];
   autoPlay?: boolean;
   interval?: number;
 }

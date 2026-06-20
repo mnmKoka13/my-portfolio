@@ -12,7 +12,8 @@
               ├── app/page.tsx（ページ統合）
               │     ├── TopSection
               │     ├── AboutSection
-              │     ├── WorksSection
+              │     ├── WorksSection（Business Projects）
+              │     ├── PersonalWorksSection
               │     ├── ProfileSection
               │     ├── SkillsSection
               │     ├── ContactSection
@@ -43,18 +44,18 @@
 | `description` | `string[]` | 自己紹介文（複数段落） |
 | `hobbies` | `string` | 趣味 |
 
-### Work（`data/works.json` / `types/works.ts`）
+### PersonalWork（`data/personal-works.json` / `types/personal-work.ts`）
 
 | フィールド | 型 | 説明 |
 |---|---|---|
-| `id` | `string` | 一意識別子（例: `work-1`） |
-| `title` | `string` | 制作物タイトル |
+| `id` | `string` | 一意識別子（例: `pw-1`） |
+| `title` | `string` | アプリ名 |
 | `description` | `string` | 説明文 |
-| `image` | `string` | サムネイル画像パス |
-| `tags` | `string[]` | 使用技術タグ |
+| `images` | `string[]` | 画面キャプチャ画像パスの配列（1枚以上） |
+| `tech` | `string[]` | 使用技術タグ |
 | `url` | `string?` | 公開 URL（任意） |
 | `github` | `string?` | GitHub リンク（任意） |
-| `period` | `string?` | 制作期間（例: `2025/10 - 2025/12`）（任意） |
+| `status` | `string` | 稼働状況（例: `"公開中"` / `"開発中"`） |
 
 ### SkillCategory / Skill（`data/skills.json` / `types/skills.ts`）
 
@@ -97,15 +98,18 @@ app/layout.tsx
   └── app/page.tsx
         ├── components/layout/Header.tsx
         │     └── components/layout/MobileMenu.tsx
-        ├── components/sections/TopSection.tsx       ← data/top.json
-        ├── components/sections/AboutSection.tsx     ← data/top.json (about フィールド)
-        ├── components/sections/WorksSection.tsx     ← data/works.json
-        │     └── components/ui/WorksCarousel.tsx
-        │           └── components/sections/ProjectCard.tsx
-        │                 └── components/sections/ProjectDetail.tsx
-        ├── components/sections/ProfileSection.tsx   ← data/profile.json
-        ├── components/sections/SkillsSection.tsx    ← data/skills.json
-        ├── components/sections/ContactSection.tsx   ← data/contact.json
+        ├── components/sections/TopSection.tsx          ← data/top.json
+        ├── components/sections/AboutSection.tsx        ← data/top.json (about フィールド)
+        ├── components/sections/WorksSection.tsx        ← data/projects.json（Business Projects）
+        │     ├── components/sections/ProjectCard.tsx
+        │     └── components/sections/ProjectDetail.tsx
+        ├── components/sections/PersonalWorksSection.tsx ← data/personal-works.json
+        │     ├── components/sections/ProjectCard.tsx（再利用）
+        │     ├── components/sections/PersonalWorkDetail.tsx
+        │     │     └── components/ui/ImageCarousel.tsx
+        ├── components/sections/ProfileSection.tsx      ← data/profile.json
+        ├── components/sections/SkillsSection.tsx       ← data/skills.json
+        ├── components/sections/ContactSection.tsx      ← data/contact.json
         └── components/sections/AvailabilitySection.tsx ← data/availability.json
 ```
 
@@ -118,7 +122,8 @@ app/layout.tsx
 |---|---|---|
 | `TopSection` | `top.json` | キャッチコピー・サブコピー・プロフィール画像 |
 | `AboutSection` | `top.json` (about) | サイト・エンジニア紹介文 |
-| `WorksSection` + `WorksCarousel` | `works.json` | 制作物カルーセル（スワイプ・矢印対応） |
+| `WorksSection` | `projects.json` | 企業案件カード一覧 + 詳細パネル（Business Projects） |
+| `PersonalWorksSection` | `personal-works.json` | 個人制作カード一覧 + 詳細パネル（画像カルーセル） |
 | `ProfileSection` | `profile.json` | 氏名・役割・自己紹介・趣味 |
 | `SkillsSection` | `skills.json` | カテゴリ別スキルタグ一覧 |
 | `ContactSection` | `contact.json` | GitHub・X・メールへの外部リンク |
@@ -130,13 +135,14 @@ app/layout.tsx
 
 ```
 Header ナビ
-  ├── TOP        → #top
-  ├── About      → #about
-  ├── Works      → #works
-  ├── Profile    → #profile
-  ├── Skills     → #skills
-  ├── Contact    → #contact
-  └── Availability → #availability
+  ├── TOP               → #top
+  ├── About             → #about
+  ├── Business Projects → #business-projects
+  ├── Personal Works    → #personal-works
+  ├── Profile           → #profile
+  ├── Skills            → #skills
+  ├── Contact           → #contact
+  └── Availability      → #availability
 ```
 
 モバイルでは MobileMenu（全画面オーバーレイ）が同じナビゲーションを提供。
@@ -155,8 +161,11 @@ Header ナビ
 │                 About                  │
 │            紹介文（複数段落）              │
 ├────────────────────────────────────────┤
-│                 Works                  │
-│   ← [カード: 画像/タイトル/タグ/リンク] →   │
+│           Business Projects            │
+│   [案件カードグリッド] + 詳細パネル          │
+├────────────────────────────────────────┤
+│             Personal Works             │
+│   [個人制作カード] + 詳細（画像カルーセル）   │
 ├────────────────────────────────────────┤
 │                Profile                 │
 │        画像 ／ 氏名・役割・自己紹介          │

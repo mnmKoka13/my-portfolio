@@ -8,7 +8,8 @@ import MobileMenu from './MobileMenu';
 const menuItems = [
   { label: 'TOP', href: 'top' },
   { label: 'About', href: 'about' },
-  { label: 'Works', href: 'works' },
+  { label: 'Business Projects', href: 'business-projects' },
+  { label: 'Personal Works', href: 'personal-works' },
   { label: 'Profile', href: 'profile' },
   { label: 'Skills', href: 'skills' },
   { label: 'Contact', href: 'contact' },

@@ -27,7 +27,6 @@ Next.js + TypeScript + Tailwind CSS でシングルページ構成、GitHub Page
 ### タスク
 - [ ] `types/` ディレクトリ作成
   - [ ] `types/profile.ts` - プロフィール型定義
-  - [ ] `types/works.ts` - 制作物型定義
   - [ ] `types/skills.ts` - スキル型定義
   - [ ] `types/contact.ts` - コンタクト型定義
   - [ ] `types/availability.ts` - 稼働状況型定義
@@ -35,7 +34,6 @@ Next.js + TypeScript + Tailwind CSS でシングルページ構成、GitHub Page
 
 - [ ] `data/` ディレクトリ作成
   - [ ] `data/profile.json` - ダミープロフィールデータ
-  - [ ] `data/works.json` - ダミー制作物データ（3件程度）
   - [ ] `data/skills.json` - ダミースキルデータ
   - [ ] `data/contact.json` - コンタクトリンク情報
   - [ ] `data/availability.json` - 稼働可能状況
@@ -129,7 +127,7 @@ Next.js + TypeScript + Tailwind CSS でシングルページ構成、GitHub Page
   - [ ] カード形式で表示（画像・タイトル・説明・タグ）
 
 - [ ] `components/sections/WorksSection.tsx` 作成
-  - [ ] works.json からデータ読み込み
+  - [ ] projects.json からデータ読み込み
   - [ ] WorksCarousel コンポーネント配置
 
 ### 5-4: ProfileSection
@@ -280,7 +278,6 @@ Next.js + TypeScript + Tailwind CSS でシングルページ構成、GitHub Page
 
 ### タスク
 - [ ] `data/profile.json` を実際のデータに更新
-- [ ] `data/works.json` を実際の制作物データに更新
 - [ ] `data/skills.json` を実際のスキルに更新
 - [ ] `data/contact.json` を実際のリンクに更新
 - [ ] `data/availability.json` を実際の稼働状況に更新

@@ -13,7 +13,6 @@ const menuItems = [
   { label: 'Profile', href: 'profile' },
   { label: 'Skills', href: 'skills' },
   { label: 'Contact', href: 'contact' },
-  { label: 'Availability', href: 'availability' },
 ];
 
 export default function Header() {

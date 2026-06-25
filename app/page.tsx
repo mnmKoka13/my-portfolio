@@ -5,7 +5,6 @@ import PersonalWorksSection from '@/components/sections/PersonalWorksSection';
 import ProfileSection from '@/components/sections/ProfileSection';
 import SkillsSection from '@/components/sections/SkillsSection';
 import ContactSection from '@/components/sections/ContactSection';
-import AvailabilitySection from '@/components/sections/AvailabilitySection';
 
 export default function Home() {
   return (
@@ -17,7 +16,6 @@ export default function Home() {
       <ProfileSection />
       <SkillsSection />
       <ContactSection />
-      <AvailabilitySection />
     </main>
   );
 }

@@ -46,7 +46,8 @@ export default function ContactSection() {
       <div className="max-w-2xl mx-auto">
         <FadeIn>
           <p className="text-center text-slate-700 mb-8 md:mb-12">
-            お仕事のご相談やお問い合わせは、以下のリンクからお気軽にご連絡ください。
+            新規のご依頼・ご相談は応相談で受け付けております。<br />
+            まずはお気軽に以下のリンクからご連絡ください。
           </p>
         </FadeIn>
         <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8">
